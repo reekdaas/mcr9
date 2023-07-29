@@ -35,7 +35,7 @@ export default function playlistReducer(state, { type, payload }) {
       console.log(state);
       console.log(payload);
       const newPlaylist = state.playlist.map((data) =>
-        data.name === payload.playlistName
+        data.name === payload.playListName
           ? {
               ...data,
               videos: data.videos.filter(
