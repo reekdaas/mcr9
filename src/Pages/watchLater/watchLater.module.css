@@ -1,0 +1,18 @@
+.watchlater {
+  display: flex;
+  /* justify-content: space; */
+  max-width: 100vw;
+  background-color: var(--clr-black-1);
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+.watchlater h1 {
+  color: #fff;
+}
+
+.watchlaterContainer {
+  display: flex;
+  margin: 1rem 0;
+  gap: 1rem;
+}

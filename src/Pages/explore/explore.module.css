@@ -1,6 +1,5 @@
 .explorPage {
   display: flex;
-  /* justify-content: space; */
   max-width: 100vw;
   background-color: var(--clr-black-1);
   padding: 1rem;
@@ -16,4 +15,22 @@
   flex-direction: row;
   flex-wrap: wrap;
   gap: 1rem;
+}
+
+.exploreHeader {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.exploreHeader > input {
+  padding: 1rem 2rem;
+  background-color: var(--clr-black-3);
+  border: none;
+  border-radius: 2%;
+  color: var(--clr-gray-1);
+}
+
+.exploreHeader > input:focus {
+  outline: none;
 }

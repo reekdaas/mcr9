@@ -5,6 +5,7 @@ import ExploreCategory from "../Pages/exploreCategory/exploreCategory";
 import SingleVideo from "../Pages/singleVideoPage/singleVideoPage";
 import PlayListPage from "../Pages/playList/playList";
 import SinglePlaylistPage from "../Pages/singleplaylistpage/singlePlaylist";
+import WatchLater from "../Pages/watchLater/watchLater";
 
 export default function AppRouter() {
   return (
@@ -15,6 +16,7 @@ export default function AppRouter() {
       <Route path="/video/:id" element={<SingleVideo />} />
       <Route path="/playlist" element={<PlayListPage />} />
       <Route path="/playlist/:name" element={<SinglePlaylistPage />} />
+      <Route path="/watchlater" element={<WatchLater />} />
     </Routes>
   );
 }

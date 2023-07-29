@@ -31,3 +31,22 @@
 .icon {
   margin-left: auto;
 }
+
+.notesList {
+  display: flex;
+  flex-direction: column;
+}
+
+.noteCard {
+  display: flex;
+  color: #fff;
+  align-items: center;
+  /* justify-content: ; */
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.noteCard > span {
+  font-size: 1.25rem;
+  color: var(--clr-dark-1);
+}

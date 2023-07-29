@@ -8,7 +8,7 @@ import PlaylistCard from "../../Component/playlisCard/playlistCard";
 export default function PlayListPage() {
   const { playlistValue } = usePlaylistContext();
   const [openModal, setOpenmodal] = useState(false);
-  console.log(playlistValue);
+  // console.log(playlistValue);
   return (
     <div className={styles.playListpage}>
       <Navbar />

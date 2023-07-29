@@ -11,7 +11,7 @@ export default function ExploreCategory() {
   const { category } = useParams();
   // console.log(category);
   const videodata = videoList.filter((video) => video.category === category);
-  console.log(videodata);
+  // console.log(videodata);
   return (
     <div className={styles.explorePage}>
       <Navbar />

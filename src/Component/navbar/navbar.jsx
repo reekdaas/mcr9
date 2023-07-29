@@ -36,7 +36,7 @@ export default function Navbar() {
           </NavLink>
         </li>
         <li>
-          <NavLink className={giveClassName}>
+          <NavLink className={giveClassName} to="/watchlater">
             <span>
               <MdWatchLater />
             </span>

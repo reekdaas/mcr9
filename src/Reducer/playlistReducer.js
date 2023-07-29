@@ -49,6 +49,55 @@ export default function playlistReducer(state, { type, payload }) {
       return { ...state, playlist: newPlaylist };
     }
 
+    case "ADD_TO_WATCH_LATER": {
+      const newVideoList = state.videoList.map((data) =>
+        data._id === payload ? { ...data, watchlater: true } : data
+      );
+      localStorage.setItem("videolist", JSON.stringify(newVideoList));
+      return { ...state, videoList: newVideoList };
+    }
+    case "REMOVE_FROM_WL": {
+      const newVideoList = state.videoList.map((data) =>
+        data?._id === payload ? { ...data, watchlater: false } : data
+      );
+      localStorage.setItem("videolist", JSON.stringify(newVideoList));
+      return { ...state, videoList: newVideoList };
+    }
+    case "ADD_NOTES": {
+      // console.log(payload);
+      let newVideoList;
+      const isNotePresent = state.videoList.find(
+        ({ _id }) => _id === payload?.videoId
+      )?.notes;
+      if (isNotePresent) {
+        newVideoList = state.videoList.map((data) =>
+          data?._id === +payload?.videoId
+            ? { ...data, notes: [...data?.notes, payload.note] }
+            : { ...data, notes: [] }
+        );
+      } else {
+        newVideoList = state.videoList.map((data) =>
+          data?._id === +payload?.videoId
+            ? { ...data, notes: [payload.note] }
+            : { ...data, notes: [] }
+        );
+      }
+
+      localStorage.setItem("videolist", JSON.stringify(newVideoList));
+      return { ...state, videoList: newVideoList };
+    }
+    case "DELETE_POST": {
+      const newVideoList = state.videoList.map((data) =>
+        data?._id === payload.videoId
+          ? {
+              ...data,
+              notes: data.notes.filter((note) => note.id !== payload.noteId),
+            }
+          : data
+      );
+      localStorage.setItem("videolist", JSON.stringify(newVideoList));
+      return { ...state, videoList: newVideoList };
+    }
     default:
       return state;
   }
