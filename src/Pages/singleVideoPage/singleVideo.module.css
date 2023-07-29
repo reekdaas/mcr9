@@ -1,0 +1,9 @@
+.singleVideo {
+  display: flex;
+  position: relative;
+  max-width: 100vw;
+  background-color: var(--clr-black-1);
+  justify-content: space-evenly;
+  padding: 1rem;
+  min-height: 100vh;
+}

@@ -1,0 +1,20 @@
+.singleplaylistpage {
+  display: flex;
+  /* justify-content: space; */
+  max-width: 100vw;
+  background-color: var(--clr-black-1);
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+.playlistContainer {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.card > span {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--clr-dark-1);
+}

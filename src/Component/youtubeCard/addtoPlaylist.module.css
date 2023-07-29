@@ -1,0 +1,47 @@
+.addtoPlaylist {
+  /* width:; */
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.addtoPlaylist button {
+  width: 40%;
+  padding: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  background-color: var(--clr-black-3);
+  color: var(--clr-dark-3);
+  border: none;
+  border-radius: 3%;
+  cursor: pointer;
+}
+.addtoPlaylist > input {
+  padding: 0.5rem 0;
+  width: 100%;
+  margin-top: 0.5rem;
+  width: 40%;
+}
+
+.addtoPlaylist > input:focus {
+  outline: none;
+}
+
+.card {
+  margin: 0.5rem 0;
+  width: 2rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  /* justify-content: ; */
+}
+
+.card h2 {
+  color: white;
+}
+
+.card span {
+  font-size: 1.5rem;
+  color: var(--clr-dark-3);
+  cursor: pointer;
+}

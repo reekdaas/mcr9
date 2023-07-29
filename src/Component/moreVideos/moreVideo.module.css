@@ -1,0 +1,27 @@
+.moreVideo {
+  display: flex;
+  flex-direction: column;
+  max-width: 20rem;
+  color: #fff;
+}
+
+.videoCard {
+  display: flex;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  align-items: center;
+  border: 2px solid var(--clr-dark-2);
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+.videoCard > img {
+  width: 10rem;
+  height: 10rem;
+  object-fit: cover;
+}
+
+.videoCard p:last-of-type {
+  margin-top: 0.5rem;
+  color: var(--clr-dark-1);
+}

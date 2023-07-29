@@ -1,0 +1,20 @@
+.homePage {
+  display: flex;
+  /* justify-content: space; */
+  max-width: 100vw;
+  background-color: var(--clr-black-1);
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+.categoryContainer {
+  max-width: 70rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.homePage h1 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}

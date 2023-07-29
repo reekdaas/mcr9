@@ -1,0 +1,33 @@
+.videoResponsive iframe {
+  height: 20rem;
+  width: 30rem;
+}
+
+.videoInfo {
+  padding: 1rem 0;
+  color: #fff;
+  display: flex;
+  max-height: 3rem;
+}
+
+.videoInfo > div {
+  max-width: 80%;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.videoInfo img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.videoInfo span {
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--clr-dark-2);
+}
+
+.icon {
+  margin-left: auto;
+}

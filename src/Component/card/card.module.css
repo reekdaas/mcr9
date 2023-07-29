@@ -1,0 +1,19 @@
+.card {
+  max-height: 15rem;
+  /* height: 15rem; */
+  max-width: 15rem;
+  /* width: 15rem; */
+  border: 2px solid yellowgreen;
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.card > img {
+  width: 12rem;
+  height: 12rem;
+}
+
+.card p {
+  color: #fff;
+  font-size: 1.2rem;
+}

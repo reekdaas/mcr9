@@ -1,0 +1,32 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  /* background-color: var(--clr-black-2); */
+  padding: 1rem 2.5rem;
+  max-height: 100vh;
+  position: sticky;
+  top: 0px;
+}
+.navbar ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2rem 0;
+  gap: 0.5rem;
+  list-style-type: none;
+}
+
+.navLink {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  font-size: 1.5rem;
+  color: var(--clr-dark-1);
+  height: 3rem;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.activeLink {
+  /* border-bottom: 2px solid var(--clr-dark-1); */
+}
